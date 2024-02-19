@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    
+}
+
+body {
+background-image: linear-gradient(346deg, rgba(55, 55, 55,0.04) 0%, rgba(55, 55, 55,0.04) 22%,rgba(140, 140, 140,0.04) 22%, rgba(140, 140, 140,0.04) 69%,rgba(225, 225, 225,0.04) 69%, rgba(225, 225, 225,0.04) 100%),linear-gradient(31deg, rgba(55, 55, 55,0.04) 0%, rgba(55, 55, 55,0.04) 42%,rgba(140, 140, 140,0.04) 42%, rgba(140, 140, 140,0.04) 85%,rgba(225, 225, 225,0.04) 85%, rgba(225, 225, 225,0.04) 100%),linear-gradient(55deg, rgba(55, 55, 55,0.04) 0%, rgba(55, 55, 55,0.04) 13%,rgba(140, 140, 140,0.04) 13%, rgba(140, 140, 140,0.04) 72%,rgba(225, 225, 225,0.04) 72%, rgba(225, 225, 225,0.04) 100%),linear-gradient(90deg, rgb(0,0,0),rgb(0,0,0));
+}
+
+/* ---------- HEADER  ---------- */
+
+.header {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/image_fond_projet1.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+#logo {
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+    transition: 1.5s;
+}
+
+#logo:hover {
+    transform: translateY(-1px) scale(1.1);
+    text-shadow: 0 0 10px black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav_links ul {
+    padding-left: 20px;
+}
+
+.nav_links ul li {
+    display: inline-block;
+    padding: 25px 25px;
+    cursor: pointer;
+}
+
+.nav_links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    display: block;
+    background-color: #fff;
+    transition: .5s;
+}
+
+.nav_links ul li:hover::after {
+    width: 100%;
+}
+
+.nav_links ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+.headerText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#test {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 25px;
+    padding: 25px;    
+}
+
+#text{
+    margin: 10px;
+    padding: 10px;
+}
+
+#text h1 {
+    color: #fff;
+    font-size: 36px;
+    transition: 1.5s;
+}
+
+#text h1:hover {
+    transform: translateY(-1px) scale(1.1);
+    text-shadow: 0 0 10px black;
+}
+
+#text p {
+    color: #aaa;
+    font-size: 18px;
+    margin: 15px;
+    padding: 15px;
+}
+
+#photoIdentity {
+    width: 300px;
+}
+
+.cta_btn {
+    display: inline-block;
+    color: #fff;
+    border: 1px solid #23ac04;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 6px 36px;
+    transition: .5s;
+    backdrop-filter: blur(10px);
+}
+
+.cta_btn:hover {
+    border: 1px solid #23ac04;
+    background-color: #23ac04;
+}
+
+.header .icons {
+    display: none;
+}
+
+/* ---------- MAIN  ---------- */
+
+section {
+    margin: 5%;
+    padding: 3%;
+}
+.title {
+    margin-left: 30px;
+    color: #fff;
+    font-size: 24px;
+    transition: 0.5s;
+}
+
+.title:hover {
+    transform: translateY(-1px) scale(1.02);
+    text-shadow: 0 0 10px black;
+}
+
+#formation {
+
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.logos {
+    width: 200px;
+}
+
+#experiences {
+
+}
+
+#hobbies {
+
+}
+
+#project {
+
+}
+
+.about {
+
+}
+
+/* ---------- FOOTER ---------- */
+
+.footer {
+
+    width: 100%;
+    padding: 3%;
+    margin: auto;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
+}
+
+.footer a {
+    padding: 15px;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer p {
+    padding: 15px;
+    font-size: 18px;
+}
+
+.iconsFooter {
+
+    padding-top: 25px;
+    display: block;
+}
+
+/* ---------- MOBILE ---------- */
+/* ---------- HEADER  ---------- */
+
+@media(max-width:768px) {
+
+    #logo {
+        font-size: 18px;
+        padding-top: 15px;
+    }
+
+    .nav_links ul li {
+        display: block;
+    }
+
+    .nav_links ul li:hover::after {
+        width: 100%;
+    }
+
+    #test h1 {
+        color: #fff;
+        font-size: 20px;
+    }
+
+    #test p {
+        font-size: 14px;
+        padding-inline: 30px;
+        color: #fff;
+        font-weight: 400;
+    }
+
+    #photoIdentity {
+        width: 200px;
+    }
+
+    .nav_links {
+        position: absolute;
+        height: 100%;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        background-color: transparent;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(10, 10, 10, 0.5);
+        text-align: left;
+        padding-top: 15px;
+        z-index: 1;
+        transition: 1s;
+    }
+
+    .icons {
+        padding: 10px;
+        font-size: 30px;
+        color: #fff;
+        display: block;
+        cursor: pointer;
+    }
+
+    .header .icons {
+        display: block;
+    }
+
+    /* ---------- MAIN  ---------- */
+
+    .title {
+        color: #fff;
+        font-size: 20px;
+        transition: 0.5s;
+    }
+
+    #formation {
+
+    }
+
+    .gridContainer {
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .logos {
+        width: 100px;
+    }
+
+    #experiences {
+
+    }
+
+    #hobbies {
+
+    }
+
+    #project {
+
+    }
+
+    .about {
+
+    }
+
+    /* ---------- FOOTER ---------- */
+
+    .footer {
+        width: 100%;
+        padding: 3%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .footer a {
+        padding: 15px;
+        font-size: 18px;
+        color: #fff;
+    }
+
+    .footer p {
+        padding: 15px;
+        font-size: 18px;
+    }
+}
